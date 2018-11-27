@@ -1,0 +1,35 @@
+unit UnitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TFormPrincipal = class(TForm)
+    PageControl1: TPageControl;
+    TBSLogin: TTabSheet;
+    TBSPaginaInicial: TTabSheet;
+    PanelLogin: TPanel;
+    Label2: TLabel;
+    Label1: TLabel;
+    EditUsuario: TEdit;
+    EditSenha: TEdit;
+    btnEntrar: TButton;
+    Label3: TLabel;
+    Label4: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrincipal: TFormPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+end.
